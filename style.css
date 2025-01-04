@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #4422df, #feffff);
+    color: black;
+}
+
+header {
+    color: wheat;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #4422df;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    animation: pulse 1s infinite;
+}
+
+.btn:hover {
+    background-color: #1ba3c7;
+    animation: none;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#searchInput {
+    display: none; 
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
+    font-size: 1.1em;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    #searchInput {
+        width: 250px;
+    }
+}
